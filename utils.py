@@ -425,12 +425,7 @@ class ARWP(torch.optim.Optimizer):
                     e_w.normal_(0, self.std * (pd.view(-1).norm().item() + 1e-16))
                     
                 if fisher is not None:
-                    # _norm = e_w.norm()
                     e_w /= torch.sqrt(1 + self.eta * fisher)
-                    # e_w = e_w / e_w.norm() * _norm
-                    # print (_norm, e_w.norm(), p.data.norm())
-
-                    # print (torch.sqrt((self.eta * fisher)).max().item(), end=' ')
 
                 p.add_(e_w)  # add weight noise
 
