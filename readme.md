@@ -3,7 +3,7 @@
 The code is the official implementation of our TMLR 2024 paper 
 [Revisiting Random Weight Perturbation for Efficiently Improving Generalization](https://openreview.net/pdf?id=WbbgOHpoPX).  A short version is on NeurIPS Workshops on Optimization for Machine Learning (2023).
 
-In this work, we enhance the generalization performance of random weight perturbation from the perspective of convergence and perturbation generation, and shows that it can achieve more efficient generalization improvement than adversarial weight perturbation in SAM, with comparable or even betteer performance.
+In this work, we enhance the generalization performance of random weight perturbation from the perspective of convergence and adaptive perturbation generation, and shows that it can achieve more efficient generalization improvement than adversarial weight perturbation in SAM, with comparable or even betteer performance.
 
 ![Illustration of F-SAM](rwp.png)
 
